@@ -7,6 +7,18 @@
     box-sizing: border-box;
 }
 
+#search, 
+#numberOfImages  {
+padding: 10px 40px 10px 10px;
+font-size: 20px;
+width: 100%;
+margin: 10px;
+border: 2px solid white;
+
+}
+
+
+
 body{
     width: 100vw;
     height: 100vh;
@@ -36,19 +48,21 @@ h2{
     color: darkslategrey;
 }
 
-h3{
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 7px;
-    color: teal;
-    
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 button{
-    padding: 5px;
+    margin: 10px;
+    padding: 20px;
     background-color:rgb(139, 205, 228);
     border-color: rgb(128, 160, 192);
     border-radius: 3px;
+    font-size: 20px;
+    color: rgb(8, 53, 25);
     
 }
 
@@ -78,8 +92,11 @@ button{
 }
 
 @media only screen and (max-width: 500px)  {
+
     #photos {
+
         grid-template-columns: repeat(1, 1fr);
+
     }
- 
+   
 }

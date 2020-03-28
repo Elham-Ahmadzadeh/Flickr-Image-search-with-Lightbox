@@ -37,7 +37,7 @@ function updateUi(data){
       
        el.addEventListener('click', () => {
 
-           enlarge(img);
+           img.src = enlarge(img);  
 
        });
        
@@ -78,7 +78,7 @@ images.forEach(image => {
 //enlarge, o means original size
 function enlarge(img) {
 
-    imgUrl(img, 'o')
+   img.src =  imgUrl(img, 'o')
   
 };
 
