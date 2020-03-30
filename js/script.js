@@ -34,7 +34,9 @@ function updateUi(data){
        let el = document.createElement('img');
 
        el.setAttribute('src', imgUrl(img, 'q'));
-      
+
+      el.classList.add('searchableImages');
+
        el.addEventListener('click', () => {
 
            img.src = enlarge(img);  
@@ -54,6 +56,8 @@ images.forEach(image => {
         lightbox.classList.add('active')
 
         const img = document.createElement('img')
+
+img.classList.add('originalImages');
 
         img.src = image.src
 
