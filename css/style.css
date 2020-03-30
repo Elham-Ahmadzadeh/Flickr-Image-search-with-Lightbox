@@ -106,7 +106,8 @@ border: solid rgba(0, 0, 0, 0.897) 2px;
     }
 
     .originalImages {
-        width: 100%;
+        width: 50%;
+       height: 50%;
     }
    
 }
